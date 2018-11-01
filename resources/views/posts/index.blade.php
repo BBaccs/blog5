@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
         <title>Laravel</title>
 
@@ -10,11 +11,13 @@
     </head>
     <body>
 
-        <h1>If you submitted a post it was just stored in the database! So coool!</h1>
+        <div class="col-sm-8 blog-main">
+            @foreach ($posts as $post)
 
-            @section('content')
-                freml
-            @endsection
+                @include ('posts.post')
+
+            @endforeach
+        </div>
 
     </body>
 </html>
