@@ -40,18 +40,15 @@ $theForm = <<<THEFORM
   <h2>Please enter your username and password to log in:</h2>
 
   <form method="POST" action="http://project.test/form-response.php">
-   <input type="text" name="userName" id="username">
-   <input type="password" name="password">
+    <input type="text" name="userName" id="username">
+    <input type="password" name="password">
     <input type="submit">
   </form>
 
 THEFORM;
 echo $theForm;
 }
-?>
 
-
-<?php 
 //using the querystring to send messages back to this login page.
 
 $isBlock = $_GET["isBlock"];
