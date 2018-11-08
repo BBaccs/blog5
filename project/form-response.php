@@ -1,9 +1,19 @@
 <?php
+session_start();
 
 
-echo "The name entered: " . $_POST["name"];
-echo "<br>The password entered: " . $_POST["password"];
+//check to see if they put the right username.
 
 
+
+$userName = $_POST["userName"];
+
+if(trim($userName) == "Jimmy") {
+
+  $_SESSION['isLoggedIn'] = true;
+  header('Location: protected-page.php');
+} else {
+  header('Location: index.php?badUserCredentials=true');
+}
 
 ?>
