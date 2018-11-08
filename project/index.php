@@ -18,7 +18,7 @@ session_start();
 
   <h1>PHP FORM PROCESSING</h1>
 
-  <form method="GET" action="http://project.test/form-response.php">
+  <form method="POST" action="http://project.test/form-response.php">
     Name: <input type="text" name="name">
     <br>
     Password: <input type="password" name="password">
