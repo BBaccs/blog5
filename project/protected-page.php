@@ -30,7 +30,5 @@ if(isset($_SESSION['isLoggedIn'])) {
 
 <h1>You're viewing the members only page pal!</h1>
 
-
-  
 </body>
 </html>

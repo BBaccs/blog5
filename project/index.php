@@ -25,6 +25,8 @@ session_start();
   </ul>
 </nav>
 
+
+<main>
 <?php
 
 if(isset($_SESSION['isLoggedIn'])) {
@@ -64,7 +66,7 @@ if(isset($isBlock)) {
 }
 
 ?>
-
+</main>
 
   </body>
 </html>

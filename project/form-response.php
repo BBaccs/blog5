@@ -15,9 +15,3 @@ if(trim($userName) == "Jimmy") {
 } else {
   header('Location: ?badUserCredentials=true');
 }
-
-
-
-
-
-?>
