@@ -39,7 +39,7 @@ $theForm = <<<THEFORM
   <p>Welcome to my PHP Login Form!</p>
   <h2>Please enter your username and password to log in:</h2>
 
-  <form method="POST" action="form-response.php">
+    <form method="POST" action="http://project.test/form-response.php">
 
     <input type="text" name="userName" id="username">
     <input type="password" name="password">
@@ -49,10 +49,6 @@ $theForm = <<<THEFORM
 THEFORM;
 echo $theForm;
 }
-
-?>
-
-<?php
 
 //using the querystring to send messages back to this login page.
 

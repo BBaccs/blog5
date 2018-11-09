@@ -11,9 +11,9 @@ session_destroy();
 <!DOCTYPE html>
 <html>
 	
-	<title>Logout page.</title>
-  <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="ch12-styles.css">
+<title>Logout page.</title>
+<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="ch12-styles.css">
 
 <body>
 
