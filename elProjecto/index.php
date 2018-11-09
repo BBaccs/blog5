@@ -47,7 +47,7 @@ $theForm = <<<THEFORM
   <p>Welcome to WheatBook!</p>
   <h2>Please enter your user name and password to log in:</h2>
 
-  <form method='post' action='response.php'>
+  <form method='post' action='login-response.php'>
       <input type='text' name='userName' id='username'>
       <input type='password' name='password'>
       <input type='submit'>
