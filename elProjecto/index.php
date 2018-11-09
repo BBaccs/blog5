@@ -44,7 +44,7 @@ if(isset($_SESSION['isLoggedIn'])) {
 $theForm = <<<THEFORM
 
 
-  <p>Welcome to WheatBook!</p>
+  <p>Welcome to my Vanilla PHP Login!</p>
   <h2>Please enter your user name and password to log in:</h2>
 
   <form method='post' action='login-response.php'>
