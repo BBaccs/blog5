@@ -5,7 +5,7 @@ session_start();
 if(isset($_SESSION['isLoggedIn'])) {
   //do nothing the user is already logged in
 } else {
-  header('Location: index.php?isblock=true');
+  header('Location: index.php?isBlock=true');
 }
 
 ?>
