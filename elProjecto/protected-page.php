@@ -24,8 +24,7 @@ if(isset($_SESSION['isLoggedIn'])) {
 
 	<title>protected page!</title>
   <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="custom.css">
-
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
 <body>
 
   <nav>
@@ -36,6 +35,7 @@ if(isset($_SESSION['isLoggedIn'])) {
       <li><a href="logout.php">Log Out</a></li>
     </ul>
   </nav>
+
 
 
   <main>
