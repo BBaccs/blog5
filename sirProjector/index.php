@@ -54,7 +54,7 @@ $badUserCredentials = $_GET["badUserCredentials"];
 if(isset($isBlock)) {
     echo "<h1>plz login</h1>";
     echo "<script>document.getElementById('username').focus();</script>";
-} else if($basUserCredentials) {
+} else if($badUserCredentials) {
     echo "<h2>Username/PW wrong</h2>";
     echo "<script>document.getElementById('username').focus();</script>";
 }
