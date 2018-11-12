@@ -51,7 +51,6 @@ $theForm = <<<THEFORM
       <input type='text' name='userName' id='username'>
       <input type='password' name='password'>
       <input type='submit'>
-
   </form>
 
 
@@ -59,12 +58,14 @@ THEFORM;
 
 echo $theForm;
 }
+?>
 
+<?php
 
 
     // using the querystring to send messages back to this login page.
 
-    $isBlock =  $_GET["isBlock"];
+    $isBlock = $_GET["isBlock"];
     $badUserCredentials = $_GET["badUserCredentials"];
 
     if(isset($isBlock)) {
