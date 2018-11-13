@@ -7,23 +7,22 @@ $userName = $_POST["userName"];
 
 if (trim($userName) == "Jimmy") {
     $_SESSION['isLoggedIn'] = true;
-    header('location: protected-page.php');
+    header('Location: protected-page.php');
+    echo '<p>YOU LOGGED IN</p>';
 
 } else {
-    header('location: index?TUC=true.php');
+    header('Location: index?TUC=true.php');
 }
-
-
-
 
 
 
 // $userName = $_POST["userName"];
 
-// if (trim($userName = "Jimmy")) {
+// if (trim($userName) == "Jimmy") {
 //     $_SESSION['isLoggedIn'] = true;
-//     header('location: protected-page.php');
+//     header('Location: protected-page.php');
+//     echo '<p>YOU LOGGED IN</p>';
 
 // } else {
-//     header('location: index?TUC=true.php');
+//     header('Location: index?TUC=true.php');
 // }

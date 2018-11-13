@@ -26,13 +26,16 @@ session_start();
 <?php
 
 if(isset($_SESSION['isLoggedIn'])) {
+   
     echo "<p>logged in</p>";
 } else {
     
 $theForm = <<<HEREDOC
 
 
-<form method="post" action="protected-page.php">
+
+
+<form method="post" action="login-response.php">
     <input name="userName" id="username" type="text" placeholder="name">
     <input name="password" type="password" placeholder="password">
     <input type="submit">
@@ -49,9 +52,9 @@ echo $theForm;
 $isBlocked = $_GET['IB'];
 $terribleUserCredents = $_GET['TUC'];
 
-if ($isBlocked = true ) {
+if(isset($isBlock)) {
     echo "<p>sign in you is blocked</p>";
-} else if ($terribleUserCredents = true) {
+} else if ($terribleUserCredents) {
     echo "<p>terirble user credentials enter a new username (hint it's Jimmy)</p>";
 }
 
@@ -61,3 +64,13 @@ if ($isBlocked = true ) {
     
 </body>
 </html>
+
+
+
+
+<!-- LINKS TO LOGIN RESPONSE NOT PROTECTED PAGE!! -->
+<!-- <form method="post" action="login-response.php">
+    <input name="userName" id="username" type="text" placeholder="name">
+    <input name="password" type="password" placeholder="password">
+    <input type="submit">
+</form> -->
