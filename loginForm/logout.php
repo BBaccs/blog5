@@ -2,20 +2,20 @@
 
 session_start();
 
-if(isset($_SESSION['isLoggedeIn'])) {
+session_unset(); 
 
-} else {
-    header('Location: index.php?IB=true');
-    echo '<p>Return to the form my dude...</p>';
-}
+session_destroy();
+
 ?>
+
 
 <!DOCTYPE html>
 <html>
-
-	<title>protected page!</title>
+	
+	<title>logout!</title>
   <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+
 <body>
 
   <nav>
@@ -28,10 +28,9 @@ if(isset($_SESSION['isLoggedeIn'])) {
   </nav>
 
 
-
   <main>
 
-    <p>You are now viewing members only content! Aren't you special!</p>
+    <p>You have been logged out!</p>
 
   </main>
 

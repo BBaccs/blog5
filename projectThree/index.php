@@ -52,10 +52,12 @@ echo $theForm;
 $isBlocked = $_GET['IB'];
 $terribleUserCredents = $_GET['TUC'];
 
-if(isset($isBlock)) {
+if(isset($isBlocked)) {
     echo "<p>sign in you is blocked</p>";
+    echo "<script>document.getElementById('username').focus();</script>";
 } else if ($terribleUserCredents) {
     echo "<p>terirble user credentials enter a new username (hint it's Jimmy)</p>";
+    echo "<script>document.getElementById('username').focus();</script>";
 }
 
 
